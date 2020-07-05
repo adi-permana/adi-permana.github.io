@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+
+  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- BOOTSTRAP SCRIPT -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Mandali&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="shortcut icon" href="images/favico.png" type="image/x-icon">
+
+  <title>Muh. D. Adi Permana</title>
+</head>
+
+<body data-spy="scroll" data-target="#main-navbar" data-offset="40">
+  <header>
+    <nav id="main-navbar" class="navbar navbar-expand fixed-top nav-style">
+      <ul class="nav nav-pills mx-auto">
+        <li class="nav-item"><a href="#profile" class="nav-link link-style btn-outline-dark">Profile</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link link-style btn-outline-dark">Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link link-style btn-outline-dark">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pt-5">
+    <!-- PROFILE -->
+    <article id="profile" class="border-bottom">
+      <h1 class="m-5">Hi, I'm Adi.</h1>
+      <img id="profile-img" src="images/2nd-profile-pic-sized.png" height="250px" width="250px"
+        alt="Personal Profile Logo">
+
+      <div id="info-container">
+        <p class="my-5">Based in Jakarta, Indonesia. I am Currently self-learning full-stack web development. Loves
+          learning about new technology,
+          current world news, and the latest pop culture. Welcome to my project site.</p>
+        <h2 class="mb-5">Skills</h2>
+        <div id="skills-container" class="container mb-5">
+          <div class="row">
+
+            <div class="each-skill  col-4">
+              <img src="images/skills icon/html-5.svg" alt="HTML 5 icon" class="skill-icon mr-2">
+              <p>HTML 5</p>
+            </div>
+            <div class="each-skill  col-4">
+              <img src="images/skills icon/css.svg" alt="CSS 3 icon" class="skill-icon mr-2">
+              <p>CSS 3</p>
+            </div>
+            <div class="each-skill  col-4">
+              <img src="images/skills icon/javascript.svg" alt="javaScript icon" class="skill-icon mr-2">
+              <p>javaScript</p>
+            </div>
+            <div class="each-skill  col-4 mt-3">
+              <img src="images/skills icon/bootstrap.svg" alt="Bootstrap icon" class="skill-icon mr-2">
+              <p>Bootstrap</p>
+            </div>
+            <div class="each-skill  col-4 mt-3">
+              <img src="images/skills icon/photoshop.svg" alt="Adobe Photoshop icon" class="skill-icon mr-2">
+              <p>Photoshop</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECTS -->
+    <article id="projects">
+      <h1 class=m-5>Projects</h1>
+
+      <div class="accordion mb-5" id="projectList">
+        <div class="card">
+          <div class="project-header" id="projectOne">
+            <h2 class="mb-0 border-bottom border-top">
+              <button class="text-center accordion-button collapsed" type="button" data-toggle="collapse"
+                data-target="#fccProject" aria-expanded="true" aria-controls="fccProject">
+                <h5 class="project-title">freecodecamp.org Projects</h5>
+              </button>
+            </h2>
+          </div>
+
+          <div id="fccProject" class="collapse show" aria-labelledby="projectOne" data-parent="#projectList">
+            <div class="card-body">
+
+              <div class="card-group">
+                <div class="card">
+                  <img src="images/fcc projects/Tribute Page.png" class="card-img-top"
+                    alt="Screen capture of Tribute page project.">
+                  <div class="card-body">
+                    <h5 class="card-title">Tribute Page</h5>
+                    <p class="card-text">A simple single static page showing autobiograhical timeline of Dr. Norman
+                      Borlaug using pure CSS 3.</p>
+                    <a href="https://codepen.io/mo_deux/full/ZEQKyvO" class="btn btn-outline-warning btn-lg btn-block"
+                      role="button" target="_blank">View
+                      Site</a>
+                    <p class="card-text m-2"><small class="text-muted">Last updated June 23, 2020</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/fcc projects/survey form.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Survey Form</h5>
+                    <p class="card-text">A simple one page responsive survey form made with pure CSS.
+                    </p>
+                    <a href="https://codepen.io/mo_deux/full/oNbwJLy" class="btn btn-outline-warning btn-lg btn-block"
+                      role="button" target="_blank">View
+                      Site</a>
+                    <p class="card-text m-2"><small class="text-muted">Last updated June 25, 2020</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/fcc projects/product landing page.png" class="card-img-top"
+                    alt="Screen capture of product landing page project.">
+                  <div class="card-body">
+                    <h5 class="card-title">Product Landing Page</h5>
+                    <p class="card-text">A simple responsive one page product landing page with an email subscription,
+                      Youtube video embed, with price card made with pure CSS.</p>
+                    <a href="https://codepen.io/mo_deux/full/pogrjeB" class="btn btn-outline-warning btn-lg btn-block"
+                      role="button" target="_blank">View
+                      Site</a>
+                    <p class="card-text m-2"><small class="text-muted">Last updated July 4, 2020</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="project-header" id="projectTwo">
+            <h2 class="mb-0 border-bottom">
+              <button class="text-center accordion-button" type="button" data-toggle="collapse"
+                data-target="#personalProject" aria-expanded="false" aria-controls="personalProject">
+                <h5 class="project-title">Personal Projects</h5>
+              </button>
+            </h2>
+          </div>
+          <div id="personalProject" class="collapse" aria-labelledby="projectTwo" data-parent="#projectList">
+            <div class="card-body">
+              <h1>WORK IN PROGRESS.</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="project-header" id="projectThree">
+            <h2 class="mb-0 border-bottom">
+              <button class="text-center accordion-button collapsed" type="button" data-toggle="collapse"
+                data-target="#miscProject" aria-expanded="false" aria-controls="miscProject">
+                <h5 class="project-title">Miscellaneous Projects</h5>
+              </button>
+            </h2>
+          </div>
+          <div id="miscProject" class="collapse" aria-labelledby="projectThree" data-parent="#projectList">
+            <div class="card-body">
+              <h1>WORK IN PROGRESS.</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- CONTACT -->
+    <article id="contact">
+      <h1 class=m-5>Contact</h1>
+
+      <form action="" id="contactForm">
+
+        <div class="form-group text-left">
+          <label for="name">Name</label>
+          <input type="text" name="name:" id="name" class="form-control" placeholder="First & last name" required>
+        </div>
+
+        <div class="form-group text-left">
+          <label for="email">Email Address:</label><input type="email" name="email" id="email" class="form-control"
+            placeholder="name@example.com" required>
+        </div>
+
+        <div class="form-group text-left"><label for="message">Message:</label><textarea name="message" id="message"
+            rows="5" class="form-control" placeholder="Your intended message here." required></textarea></div>
+
+        <button type="submit" class="btn  btn-md mb-5 btn-dark" id="submitForm" value="submit">Let's
+          Talk !</button>
+      </form>
+
+      <!-- MODAL -->
+      <div class="modal fade" id="thankMessage" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Thank you for your interest !!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>As of now this won't really be sent anywhere as it is just a prototype link. Though, thank you none the
+                less. Maybe when this becomes active, you could come back and we could link up. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </article>
+  </main>
+
+  <footer id="footer" class="m-0 py-5">
+
+
+    <a href="instagram.com" class="sociall-link"><i class="fab fa-instagram"></i></a>
+    <a href="twitter.com" class="sociall-link"><i class="fab fa-twitter "></i></a>
+    <a href="linkedin" class="sociall-link"><i class="fab fa-linkedin"></i></a>
+
+    <div class="footer-size">
+      <p id="copyright">Copyright &COPY; 2020 Muh. D. Adi Permana. All rights reserved.</p>
+      <p id="icon-credit">
+        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> & <a
+          href="https://www.flaticon.com/authors/vitaly-gorbachev" title="Vitaly Gorbachev">Vitaly
+          Gorbachev</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+    </div>
+
+
+  </footer>
+
+</body>
+
+</html>

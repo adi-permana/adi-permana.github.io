@@ -1,0 +1,175 @@
+* {
+  max-width: 1440px;
+  /* margin: 0 auto; */
+}
+
+:root {
+  --main-purple: #46BBF5;
+  --main-red: #fb0192;
+  --profile-bg: linear-gradient(#46BBF5, #fb0192);
+  --contact-bg: linear-gradient(#fb0192, #46BBF5);
+
+  --footer-grey: #dfddea;
+  --footer-link-color: #dfddea;
+  --fotter-link-hover: #111;
+
+  --header-font: 'Playfair Display',
+    serif;
+  --body-font: 'Mandali',
+    sans-serif;
+
+  --nav-font: 1rem;
+  --large-font: 3rem;
+  --regular-font: 1.2rem;
+}
+
+h1,
+h2,
+h5 {
+  font-family: var(--header-font);
+}
+
+h1 {
+  font-size: var(--large-font);
+}
+
+body {
+  text-align: center;
+  position: relative;
+  line-height: 1.5;
+  font-family: var(--body-font);
+  font-size: var(--regular-font);
+}
+
+.nav-style {
+  background-color: var(--main-purple);
+  font-family: var(--body-font);
+  font-size: var(--nav-font);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* NAVBAR */
+.link-style {
+  text-transform: uppercase;
+}
+
+.link-style:active {
+  background-color: red;
+}
+
+/* PROFILE */
+#profile {
+  background: var(--profile-bg);
+}
+
+#info-container {
+  margin: 0 30% 0;
+  color: #fff;
+}
+
+#info-container h2 {
+  font-family: var(--body-font);
+  font-weight: 900;
+  border-top: 3px solid yellow;
+  border-bottom: 3px solid yellow;
+}
+
+#skills-container {
+  border-bottom: 3px solid yellow;
+}
+
+.skill-icon {
+  width: 63px;
+  height: 63px;
+}
+
+.each-skill {
+  margin: auto;
+}
+
+/* PROJECTS */
+.project-header {
+  background-color: #fff;
+}
+
+#projectList {
+  width: 100%;
+}
+
+.accordion-button {
+  background-color: #fff;
+  border: none;
+  width: 100%;
+}
+
+.accordion-button:hover {
+  text-decoration: underline var(--main-purple);
+}
+
+.accordion-button:focus {
+  outline: 0;
+}
+
+/* CONTACT FORM */
+#contact {
+  background: var(--contact-bg);
+}
+
+#contactForm {
+  width: 50%;
+  color: #fff;
+}
+
+/* FOOTER */
+#footer {
+  background-color: var(--main-purple);
+  color: var(--footer-grey);
+}
+
+.sociall-link {
+  color: var(--footer-grey);
+  margin-right: 15px;
+}
+
+.sociall-link:hover {
+  color: var(--fotter-link-hover);
+}
+
+#icon-credit a {
+  color: var(--footer-link-color);
+}
+
+#icon-credit a:hover {
+  color: var(--fotter-link-hover);
+}
+
+.footer-size {
+  margin-top: 15px;
+  font-size: 0.8rem;
+}
+
+/* BREAKPOINT */
+@media (max-width: 686px) {
+  #info-container {
+    margin: 0 10px 0;
+  }
+
+  .each-skill p {
+    display: block;
+  }
+}
+
+@media (max-width: 470px) {
+  #contactForm {
+    width: 90%;
+  }
+
+  #info-container {
+    margin: 0 10px 0;
+  }
+}
